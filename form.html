@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Atividade Forms</title>
+	<style type="text/css">
+		div {
+			background-color: #d9b3ff;
+		}
+		body {
+			background-color: #a64dff;
+			color: #990099;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		  <h2> Formúlario </h2>
+	</header>
+	<section>
+		<div>
+		<fieldset>
+		<form>
+ 			<label for="fname"> Nome: </label><br>
+  			<input type="text" id="fname" name="fname"  style="color:#990099;"><br>
+ 			<label for="lname"> Sobrenome: </label><br>
+  			<input type="text" id="lname" name="lname"  style="color:#990099;">
+		</form>
+		<form action="/action_page.php">
+  			<label for="sexo"><p> Selecione o seu sexo? </p></label>
+  			<select id="sexo" name="sexo"  style="color:#990099;">
+    		<option value="Feminino"> Feminino </option>
+    		<option value="Masculino"> Masculino </option>
+    		<option value="Não-Binário"> Não-Binário </option>
+    		<option value="Outros"> Outros </option>
+  			</select>
+		</form>
+		<br>
+		<form action="/action_page.php"  style="color:#990099;">
+  			<label for="birthday"> Data do seu Aniversário: </label>
+  			<p><input type="date" id="birthday" name="birthday"  style="color:#990099;"></form></p>
+		</form>
+		<form>
+			<p> Selecione qual a sua Nacionalidade? </p>
+  			<input type="checkbox" id="vehicle1" name="vehicle1" value="Brasileiro">
+  			<label for="vehicle1"> Brasileiro </label><br>
+  			<input type="checkbox" id="vehicle2" name="vehicle2" value="Norte-Americano">
+  			<label for="vehicle2"> Norte-Americano </label><br>
+  			<input type="checkbox" id="vehicle3" name="vehicle3" value="Outra">
+  			<label for="vehicle3"> Outra </label>
+		</form>
+		<p> Selecione a sua Orientação Sexual? </p>
+		<form action="/action_page.php">
+  			<input list="browsers" name="browser"  style="color:#990099;">
+  			<datalist id="browsers">
+    		<option value="Heterossexual">
+   			<option value="Homossexual">
+    		<option value="Bissexual">
+    		<option value="Pansexual">
+    		<option value="Assexual">
+    		<option value="Outros">
+  			</datalist><br>
+		</form>
+		<br>
+		<form action="/action_page.php">
+  			<label for="quantity"> Quantos irmãos você tem? </label>
+  			<p><input type="number" id="quantity" name="quantity" min="0" max="10"  style="color:#990099;"></form></p>
+		</form>
+		<form action="/action_page.php">
+  			<label for="favcolor"> Selecione sua cor Favorita: </label>
+  			<p><input type="color" id="favcolor" name="favcolor" value="#990099"></p>
+		</form>
+		<form>
+			<p> Selecione qual curso deseja fazer? </p>
+  			<input type="radio" id="Administração" name="fav_language" value="Administração">
+  			<label for="Administração"> Administração </label><br>
+  			<input type="radio" id="Enfermagem" name="fav_language" value="Enfermagem">
+  			<label for="Enfermagem"> Enfermagem </label><br>
+  			<input type="radio" id="Informática" name="fav_language" value="Informática">
+  			<label for="Informática"> Informática </label>
+		</form>
+		<br>
+		<form action="/action_page.php">
+  			<label for="email"> Digite o seu Email: </label>
+  			<p><input type="email" id="email" name="email"  style="color:#990099;"></p>
+		</form>
+		<form action="/action_page.php">
+  			<label for="phone"> Insira um número de telefone: </label>
+ 			<p><input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required style="color:#990099;" ></p>
+		</form>
+		<br>
+		<textarea name="message" rows="5" cols="50"  style="color:#990099;">
+ Diga o que esse formulário lhe proporcionou.
+		</textarea>
+		<p><button type="button"   onclick="alert('Você chegou ao fim do Formulário!')" > Click aqui! </button></p>
+		</fieldset>
+		<br>
+		</div>
+	</section>
+	<footer>
+		  <b>EEEP Amélia Figueiredo &copy; 
+		  <p> Larissa Rocha - Estudante </p></b>
+	</footer>
+</body>
+</html>
