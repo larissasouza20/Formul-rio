@@ -20,79 +20,221 @@
 	<section>
 		<div>
 		<fieldset>
-		<form>
- 			<label for="fname"> Nome: </label><br>
-  			<input type="text" id="fname" name="fname"  style="color:#990099;"><br>
- 			<label for="lname"> Sobrenome: </label><br>
-  			<input type="text" id="lname" name="lname"  style="color:#990099;">
-		</form>
-		<form action="/action_page.php">
-  			<label for="sexo"><p> Selecione o seu sexo? </p></label>
-  			<select id="sexo" name="sexo"  style="color:#990099;">
-    		<option value="Feminino"> Feminino </option>
-    		<option value="Masculino"> Masculino </option>
-    		<option value="Não-Binário"> Não-Binário </option>
-    		<option value="Outros"> Outros </option>
-  			</select>
-		</form>
+		<div>
+			<form>
+ 				<label for="fname"> Nome: </label><br>
+  				<input type="text" id="fname" name="fname"  style="color:#990099;"><br>
+				<label for="lname"> Sobrenome: </label><br>
+  				<input type="text" id="lname" name="lname"  style="color:#990099;"><br><br>
+			</form>
+		</div>
+		<div>
+			<form id="frmImage">
+            <label for="musical">Informe o seu gosto musical:</label><br><br>
+            <input type="text" id="musical" name="musical" style="color:#990099;"><br><br>
+            <input type="image" src="botao.png" alt="Submit" height="25" wight="75" style="color:#990099;" ><br>
+ 			</form>
+		</div>
+		<div>
+			<form>
+				<input type="hidden" id="ResponsávelId" name="ResponsávelId" value="10">
+				<label for="Responsável"> Informe o nome do seu Responsável: </label> <br><br>
+				<input type="text" id="Responsável" name="Responsável" style="color:#990099;"> 
+			</form>
+		</div>
+		<div>
+			<form action="/action_page.php">
+	  			<label for="sexo"><p> Selecione o seu sexo? </p></label>
+	  			<select id="sexo" name="sexo"  style="color:#990099;">
+	    		<option value="Feminino"> Feminino </option>
+	    		<option value="Masculino"> Masculino </option>
+	    		<option value="Não-Binário"> Não-Binário </option>
+	    		<option value="Outros"> Outros </option>
+	  			</select>
+			</form>
+		</div>
 		<br>
-		<form action="/action_page.php"  style="color:#990099;">
-  			<label for="birthday"> Data do seu Aniversário: </label>
-  			<p><input type="date" id="birthday" name="birthday"  style="color:#990099;"></form></p>
-		</form>
-		<form>
-			<p> Selecione qual a sua Nacionalidade? </p>
-  			<input type="checkbox" id="vehicle1" name="vehicle1" value="Brasileiro">
-  			<label for="vehicle1"> Brasileiro </label><br>
-  			<input type="checkbox" id="vehicle2" name="vehicle2" value="Norte-Americano">
-  			<label for="vehicle2"> Norte-Americano </label><br>
-  			<input type="checkbox" id="vehicle3" name="vehicle3" value="Outra">
-  			<label for="vehicle3"> Outra </label>
-		</form>
-		<p> Selecione a sua Orientação Sexual? </p>
-		<form action="/action_page.php">
-  			<input list="browsers" name="browser"  style="color:#990099;">
-  			<datalist id="browsers">
-    		<option value="Heterossexual">
-   			<option value="Homossexual">
-    		<option value="Bissexual">
-    		<option value="Pansexual">
-    		<option value="Assexual">
-    		<option value="Outros">
-  			</datalist><br>
-		</form>
+		<div>
+			<form action="/action_page.php"  style="color:#990099;">
+	  			<label for="birthday"> Data do seu Aniversário: </label>
+	  			<p><input type="date" id="birthday" name="birthday"  style="color:#990099;"></form></p>
+			</form>
+		</div>
+		<div>
+			<form id="frmMeses">
+            <label for="meses">Selecione o mês desejado:</label><br><br>
+            <input type="month" id="meses" name="meses" style="color:#990099;"><br><br>
+        </div>
+        <div>
+        	<form>
+        		<label for="semana">Escolha uma semana:</label><br><br>
+        		<input type="week" id="semana" name="semana" min="2020-W30" max="2020-W40" style="color:#990099;" >
+			</form> 
+        </div>
+		<div>
+			<form>
+				<p> Selecione qual a sua Nacionalidade? </p>
+	  			<input type="checkbox" id="vehicle1" name="vehicle1" value="Brasileiro">
+	  			<label for="vehicle1"> Brasileiro </label><br>
+	  			<input type="checkbox" id="vehicle2" name="vehicle2" value="Norte-Americano">
+	  			<label for="vehicle2"> Norte-Americano </label><br>
+	  			<input type="checkbox" id="vehicle3" name="vehicle3" value="Outra">
+	  			<label for="vehicle3"> Outra </label>
+			</form>
+		</div>
 		<br>
-		<form action="/action_page.php">
-  			<label for="quantity"> Quantos irmãos você tem? </label>
-  			<p><input type="number" id="quantity" name="quantity" min="0" max="10"  style="color:#990099;"></form></p>
-		</form>
-		<form action="/action_page.php">
-  			<label for="favcolor"> Selecione sua cor Favorita: </label>
-  			<p><input type="color" id="favcolor" name="favcolor" value="#990099"></p>
-		</form>
-		<form>
-			<p> Selecione qual curso deseja fazer? </p>
-  			<input type="radio" id="Administração" name="fav_language" value="Administração">
-  			<label for="Administração"> Administração </label><br>
-  			<input type="radio" id="Enfermagem" name="fav_language" value="Enfermagem">
-  			<label for="Enfermagem"> Enfermagem </label><br>
-  			<input type="radio" id="Informática" name="fav_language" value="Informática">
-  			<label for="Informática"> Informática </label>
-		</form>
+		<div>
+			<label for="estado">Estado</label>
+			<p><select id="estado" name="estado"  style="color:#990099;">
+				<option value="SP">SP</option>
+				<option value="RJ">RJ</option>
+				<option value="PB">PB</option>
+				<option value="CE">CE</option>
+				<option value="SC">SC</option>
+			</select></p>
+		</div>
+		<div>
+			<p> Selecione a sua Orientação Sexual? </p>
+			<form action="/action_page.php">
+	  			<input list="browsers" name="browser"  style="color:#990099;">
+	  			<datalist id="browsers">
+	    		<option value="Heterossexual">
+	   			<option value="Homossexual">
+	    		<option value="Bissexual">
+	    		<option value="Pansexual">
+	    		<option value="Assexual">
+	    		<option value="Outros">
+	  			</datalist><br>
+			</form>
+		</div>
 		<br>
-		<form action="/action_page.php">
-  			<label for="email"> Digite o seu Email: </label>
-  			<p><input type="email" id="email" name="email"  style="color:#990099;"></p>
-		</form>
-		<form action="/action_page.php">
-  			<label for="phone"> Insira um número de telefone: </label>
- 			<p><input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required style="color:#990099;" ></p>
-		</form>
+		<div>
+			<form action="/action_page.php">
+	  			<label for="quantity"> Quantos irmãos você tem? </label>
+	  			<p><input type="number" id="quantity" name="quantity" min="0" max="10"  style="color:#990099;"></p>
+			</form>
+		</div>
+		<div>
+			<form action="/action_page.php">
+	  			<label for="favcolor"> Selecione sua cor Favorita: </label>
+	  			<p><input type="color" id="favcolor" name="favcolor" value="#990099"></p>
+			</form>
+		</div>
+		<div>
+			<form>
+				<p> Selecione qual curso deseja fazer? </p>
+	  			<input type="radio" id="Administração" name="fav_language" value="Administração">
+	  			<label for="Administração"> Administração </label><br>
+	  			<input type="radio" id="Enfermagem" name="fav_language" value="Enfermagem">
+	  			<label for="Enfermagem"> Enfermagem </label><br>
+	  			<input type="radio" id="Informática" name="fav_language" value="Informática">
+	  			<label for="Informática"> Informática </label>
+			</form>
+		</div>
+		<div>
+			<form id="frmCheckbox">
+				<p> Você prefere beber o que? </p>
+           		<label for="chkOpcaoA"> Café </label>
+            	<input type="checkbox" id="chkOpcaoA" name="alternativaA" value="Café">     
+            	<label for="chkOpcaoB"> Água </label>
+            	<input type="checkbox" id="chkOpcaoB" name="alternativaB" value="Água">
+            	<label for="chkOpcaoA"> Suco </label>
+            	<input type="checkbox" id="chkOpcaoA" name="alternativaA" value="Suco">     
+            	<label for="chkOpcaoB"> Refrigerante </label>
+            	<input type="checkbox" id="chkOpcaoB" name="alternativaB" value="Refrigerante">
+        	</form>
+		</div>
 		<br>
-		<textarea name="message" rows="5" cols="50"  style="color:#990099;">
- Diga o que esse formulário lhe proporcionou.
-		</textarea>
-		<p><button type="button"   onclick="alert('Você chegou ao fim do Formulário!')" > Click aqui! </button></p>
+		<div>
+			<form id="frmSearch">
+	        	<label for="pesquisa" > Informe onde deseja pesquisar :</label>
+	        	<p><input type="Search" id="pesquisa" name="q" placeholder="Buscar no site..." style="color:#990099;"></p>
+	        	<input type="submit" value="Buscar" style="color:#990099;" >
+	        </form>
+	    </div>
+	    <br>
+	    <div>
+	    	<form action="/action_page.php">
+  				<label for="gpesquisar"> Pesquisar no Google: </label><br><br>
+  				<input type="pesquisar" id="gpesquisar" name="gpesquisa" style="color:#990099;"><br><br>
+  				<input type="submit" value="Buscar" style="color:#990099;">
+			</form>
+	    </div>
+        <br>
+        <div>
+		    <form id="frmURL">
+		    	<label for="urlComBr"> Informe um endereço com a extensão .com.br:</label>
+	           <p><input type="url" name="urlComBr" id="urlComBr" placeholder="http://endereço.com.br" pattern=".+\.com.br" required style="color:#990099;"></p>
+	           <input type="submit" value="Exibir o endereço" style="color:#990099;">
+		    </form>
+		</div>
+		<br>
+		<div>
+			<form action="/action_page.php">
+	  			<label for="email"> Digite o seu Email: </label>
+	  			<p><input type="email" id="email" name="email"  style="color:#990099;"></p>
+			</form>
+		</div>
+		<div>
+			<form>
+				<label for="senha"> Informe sua senha: </label><br><br>
+				<input type="password" id="senha" name="senha" style="color:#990099;">
+			</form>
+		</div>
+		<br>
+		<div>
+			<form id="frmButton">
+        		<label for="txtCEP">Informe o CEP:</label><br><br>
+        		<input type="text" id="txtCEP" name="cep" style="color:#990099;"><br><br>
+        		<button type="button" name = "btnPesquisarCep" value="cep" style="color:#990099;" >Pesquisar Cep</button><br><br>
+        	</form>
+		</div>
+		<div>
+			<form action="/action_page.php">
+	  			<label for="phone"> Insira um número de telefone: </label>
+	 			<p><input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required style="color:#990099;" ></p>
+			</form>
+		</div>
+		<div>
+			<form>
+				<label for="hora-desejada"> Hora desejada: </label><br><br>
+				<input type="time" id="hora-desejada" name="hora-desejada" required style="color:#990099;">
+			</form>
+		</div>
+		<br>
+		<div>
+			<form>
+				<label for="data"> Selecione uma data e hora: </label><br><br>
+				<input type="datetime-local" id="data" name="data" style="color:#990099;">
+			</form>
+		</div>
+		<br>
+		<div>
+			 <form>
+		    	<label for="arquivo"> Selecione um arquivo:</label>	   
+		    	<p><input type="file" id=" arquivo" name="arquivo" multiple style="color:#990099;"></p>
+		    	<input type="submit" value="Enviar o arquivo" style="color:#990099;">
+		    </form>
+		</div>
+		<br>
+		<div>
+			<form id="frmRange">
+        		<label for="escala">Escala (Mínimo -50 e Máximo +50):</label><br><br>
+        		<input type="range" id="escala" name="escala" min="-50" step="2" max="50" value= "0" style="color:#990099;"><br><br>
+        </div>    
+		<br>
+		<div>
+			<textarea name="message" rows="5" cols="50"  style="color:#990099;">
+	 Diga o que esse formulário lhe proporcionou.
+			</textarea>
+		</div>
+		<br>
+		<div>
+			<input type="reset" value="Limpar Formulário" style="color:#990099;">
+		</div>
+		<div>
+			<p><button type="button" style="color:#990099;"  onclick="alert('Você chegou ao fim do Formulário!')" > Click aqui! </button></p>
+		</div>
 		</fieldset>
 		<br>
 		</div>
